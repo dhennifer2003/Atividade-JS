@@ -1,0 +1,47 @@
+//questão 1
+let peso = 51.8
+let altura = 1.52
+console.log(peso/Math.pow(altura,2))
+
+//questão 2
+let raio = 5.3
+let area = Math.PI * Math.pow(raio, 2)
+console.log(area.toFixed(2))
+
+//questão 3
+let raioo = 5
+let volume = 4/3*Math.PI*Math.pow(raioo,3)
+console.log(volume.toFixed(2))
+
+/*STRINGS*/
+//questão 4
+const a = 'Maria Silva'
+console.log(a.replaceAll("a", "e"))
+
+//questão 5
+const nome = "Alana Maria"
+
+function verificanome(nome) {
+    if (nome.charAt(0) === 'A') {
+        return true;
+      } else {
+        return false;
+      }
+}
+console.log(verificanome(nome))
+
+//questão 6
+let palavra = 'amor a roma'
+let reverse = palavra.split('').reverse().toString()
+
+for(let i=0; i<=palavra.split('').length;i++) {
+    if (palavra.charAt(i)==reverse.charAt(i)){
+        console.log('A palavra é um palindromo')
+        break
+    }
+    else {
+        console.log('A palavra não é um palindromo')
+    }
+}
+
+
